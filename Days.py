@@ -79,6 +79,4 @@ if uploaded_file is not None:
     except KeyError as e:
         st.error(f"Missing expected column in uploaded file: {e}")
     except Exception as e:
-        st.error(f"Error processing file: {e}")# Vendor-Days-App
-Vendor Days App
-
+        st.error(f"Error processing file: {e}")
