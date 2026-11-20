@@ -42,7 +42,7 @@ if uploaded_file is not None:
     col1.metric("Total Rows", f"{len(filtered_df):,}")
     col2.metric("Total Balance Due (LC)", f"{filtered_df['Balance Due (LC)'].sum():,.2f}")
 
-    st.dataframe(filtered_df, use_container_width=True,hide_index=True,column_config={"Series": None},)
+    st.dataframe(filtered_df, use_container_width=True,hide_index=True,column_config={"Series": None,"Offset Acct": None,"Deb./Cred. (LC)": None,},)
 
     dl_col1, dl_col2 = st.columns(2)
 
