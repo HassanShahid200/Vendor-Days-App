@@ -2,10 +2,10 @@ import io
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="General Ledger Transformer", layout="wide")
-st.title("General Ledger Data Transformer")
+st.set_page_config(page_title="Invoice Days Calculator", layout="wide")
+st.title("Invoice Days Calculator")
 
-uploaded_file = st.file_uploader("Upload General Ledger (.txt)", type=["txt"])
+uploaded_file = st.file_uploader("Upload your file (.txt)", type=["txt"])
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, sep="\t", encoding="utf-16")
